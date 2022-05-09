@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="https://eticket.railway.gov.bd/img/favicon.ico" type="image/x-icon">
+   <link rel="icon" href="https://eticket.railway.gov.bd/img/favicon.ico" type="image/x-icon">
+   <title>Bangladesh Railway E-Ticketing Service</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="./js/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+   <style>
+      body {
+          font-family: 'Roboto', sans-serif;
+      }
+  </style>
+</head>
+<body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+          <div class="container-fluid">
+            <div class="logo d-flex"><img class="w-25 h-50 align-items: center;" src="./img/bangladesh-railway.png" alt=""> <p>Bangladesh <br> Railway</p> 
+            </div>
+            <button class="navbar-toggler text-success bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+              <ul class="navbar-nav  mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-success" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text-success" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-success" href="#">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-success" href="#">Verify Ticket</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-success" href="#">Contact Us</a>
+                </li>
+              </ul>
+    
+            </div>
+          </div>
+        </nav>
+      </div> 
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <form class="row g-3 needs-validation mx-5" novalidate>
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label">From</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="From Station" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">To</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="To Station" value="" required>
+                
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Date of Journey</label>
+              <input type="text" class="datepicker form-control hasDatepicker bg-white" id="doj" name="doj" data-date-format="dd/mm/yyyy" placeholder="Pick a date" value="" readonly="true">
+              <img class="ui-datepicker-trigger" src="./img/calendar.png" alt="..." title="...">
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom04" class="form-label">Choose Class</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose Class</option>
+                <option>AC_B</option>
+                <option>AC_C</option>
+                <option>AC_S</option>
+                <option>SNIGDHA</option>
+                <option>F_BERTH</option>
+                <option>F_SEAT</option>
+                <option>F_CHAIR</option>
+                <option>S_CHAIR</option>
+                <option>SHOVAN</option>
+                <option>SHULOV</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            
+            <div class="col-12">
+              <button class="btn btn-success w-100" type="submit">Submit form</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="imge mt-5"><img class="w-100 rounded-3" src="./img/train-illustration-for-train-1.jpg" alt=""></div>
+        </div>
+
+
+
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card m-auto mt-5 shadow" style="width: 20rem;">
+            <img src="./img/Screenshot_1-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title"><b>Search</b> </h3>
+              <p class="card-text">Choose your origin, destination, <br> journey dates and search for trains.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card m-auto mt-5 shadow" style="width: 20rem;">
+            <img src="./img/Screenshot_2-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title"><b>Select </b> </h3>
+              <p class="card-text">Select your desired trip and choose <br> your seats.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card m-auto mt-5 shadow" style="width: 20rem;">
+            <img src="./img/Screenshot_3-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body mt-4">
+              <h3 class="card-title"><b>Pay </b> </h3>
+              <p class="card-text">Pay for the tickets via Debit / Credit <br>Cards or bKash. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="section-two d-flex justify-content-center mt-5 align-items-center">
+           
+            <div class="image-one "><img src="./img/bkash.png" alt=""></div>
+            <div class="image-one mx-4"><img src="./img/master-card.png" alt=""></div>
+            <div class="image-one"><img src="./img/visa.png" alt=""></div>
+             <hr>
+          </div>
+        </div>
+    
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="text-ber text-center mt-5">
+            <p><b>
+              * The Tickets are issued by Bangladesh Railway’s Centrally Computerized Seat Reservation & Ticketing System (CCSRTS) and Shohoz-Synesis-Vincen JV is responsible for designing, <br> development, implementation, technical operation & maintenance of the system. 
+            </b> </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lest-ber  mt-5 shadow-none  bg-light rounded">
+        
+          <div class="col-lg-6 col-md-12 col-sm-12">
+          
+           <div class="section-three d-flex mt-4">
+            
+             <div class="secction-img"><img class="w-50" src="./img/bangladesh-railway.png"  alt=""></div>
+             <div class="three-text"><h5>Bangladesh Railway</h5></div>
+            <p class="bangla-text text-success mt-5 alert-link">নিরাপদ . আরামদায়ক . সাশ্রয়ী</p>
+           </div>    
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="title-ber mt-4 text-center">
+              <p>Powered by</p>
+            </div>
+           <div class="sub-title text-center">
+             <h4>Shohoz-Synesis-Vincen JV </h4>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <script src="./js/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
